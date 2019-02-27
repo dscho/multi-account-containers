@@ -1179,7 +1179,8 @@ Logic.registerPanel(P_CONTAINER_ASSIGNMENTS, {
         const trElement = document.createElement("tr");
         /* As we don't have the full or correct path the best we can assume is the path is HTTPS and then replace with a broken icon later if it doesn't load.
            This is pending a better solution for favicons from web extensions */
-        const assumedUrl = `https://${site.hostname}/favicon.ico`;
+        const match = /^([^/]+)/.exec(site.hostname);
+        const assumedUrl = `https://${match ? match[1] : site.hostname}/favicon.ico`;
         trElement.innerHTML = Utils.escaped`
         <td>
           <div class="favicon"></div>
