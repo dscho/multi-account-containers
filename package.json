@@ -43,7 +43,7 @@
     "lint:css": "stylelint src/css/*.css",
     "lint:html": "htmllint *.html",
     "lint:js": "eslint .",
-    "package": "rm -rf src/web-ext-artifacts && npm run build && mv src/web-ext-artifacts/firefox_multi-account_containers-*.zip addon.xpi",
+    "package": "rm -rf src/web-ext-artifacts && npm run build && mv src/web-ext-artifacts/dscho_s_multi-account_containers-*.zip addon.xpi",
     "test": "npm run lint && npm run coverage",
     "test:once": "mocha test/**/*.test.js",
     "test:watch": "npm run test:once -- --watch",
