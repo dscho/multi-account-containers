@@ -9,6 +9,7 @@ README.html
 addon.env
 
 src/web-ext-artifacts/*
+src/.web-extension-id
 
 # JetBrains IDE files
 .idea
